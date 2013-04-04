@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Author: Taras Danylak
+# Url: https://github.com/tdak/rbenv-bootstrap
+
 
 # Update sources:
 sudo yum update
