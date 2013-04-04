@@ -9,8 +9,11 @@ sudo yum install -y gcc gcc-c++ make autoconf automake libtool patch bzip2 bzip2
 # Install Readline dependecies: 
 sudo yum install -y readline readline-devel
 
+# ADD RPMFORGE repo for libyaml-devel if it doesn't exist
+sudo rpm -i http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+
 # Extras for RubyGems and Rails:
-sudo yum install -y zlib zlib-devel libyaml-devel libffi-devel bison iconv-devel openssl-devel iconv-devel sqlite
+sudo yum install -y zlib zlib-devel libyaml libyaml-devel libffi-devel bison iconv-devel openssl-devel iconv-devel sqlite
 
 # Install some nokogiri dependencies:
 sudo yum install -y libxml2 libxml2-devel libxslt libxslt-devel
