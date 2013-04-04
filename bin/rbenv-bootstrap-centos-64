@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Update sources:
+sudo yum update
+
+# Install development tools:
+sudo yum install -y gcc gcc-c++ make autoconf automake libtool patch bzip2 bzip2-devel
+
+# Install Readline dependecies: 
+sudo yum install -y readline readline-devel
+
+# Extras for RubyGems and Rails:
+sudo yum install -y zlib zlib-devel libyaml-devel libffi-devel bison iconv-devel openssl-devel iconv-devel sqlite
+
+# Install some nokogiri dependencies:
+sudo yum install -y libxml2 libxml2-devel libxslt libxslt-devel
+
+# Install ImageMagick dependencies:
+sudo yum install -y tcl-devel libpng-devel libjpeg-devel ghostscript-devel bzip2-devel freetype-devel libtiff-devel
